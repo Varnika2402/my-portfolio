@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="feedback.css">
+  <title>Holiday Resort Feedback Form</title>
+</head>
+<body>
+  <div class="form-container">
+    
+    <h2>Holiday Resort Feedback Form</h2>
+    <form>
+      <label for="first-name">Reservation Name:</label>
+      <input type="text" id="first-name" name="first_name" placeholder="First Name" required>
+      <input type="text" id="last-name" name="last_name" placeholder="Last Name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="checkin">Check-in Date:</label>
+      <input type="date" id="checkin" name="checkin" required>
+
+      <label for="checkout">Check-out Date:</label>
+      <input type="date" id="checkout" name="checkout" required>
+
+      <label>Holiday Resort Quality:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="beach_quality" value="very_good">Very Good</label>
+        <label><input type="radio" name="beach_quality" value="good">Good</label>
+        <label><input type="radio" name="beach_quality" value="fair">Fair</label>
+        <label><input type="radio" name="beach_quality" value="poor">Poor</label>
+        <label><input type="radio" name="beach_quality" value="very_poor">Very Poor</label>
+      </div>
+
+      <label>Resort Facilities Rating:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="resort_facilities" value="very_good">Very Good</label>
+        <label><input type="radio" name="resort_facilities" value="good">Good</label>
+        <label><input type="radio" name="resort_facilities" value="fair">Fair</label>
+        <label><input type="radio" name="resort_facilities" value="poor">Poor</label>
+        <label><input type="radio" name="resort_facilities" value="very_poor">Very Poor</label>
+      </div>
+
+      <label>Staff Service Rating:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="staff_service" value="very_good">Very Good</label>
+        <label><input type="radio" name="staff_service" value="good">Good</label>
+        <label><input type="radio" name="staff_service" value="fair">Fair</label>
+        <label><input type="radio" name="staff_service" value="poor">Poor</label>
+        <label><input type="radio" name="staff_service" value="very_poor">Very Poor</label>
+      </div>
+
+      <label for="comments">Additional Comments or Suggestions:</label>
+      <textarea id="comments" name="comments" placeholder="We'd love to hear your thoughts!"></textarea>
+
+      <input type="submit" value="Submit Feedback">
+    </form>
+  </div>
+</body>
+</html>

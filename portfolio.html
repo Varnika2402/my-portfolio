@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="section">
+        <div class="container">
+            <h1>Varnika M</h1>
+            <p>
+                Hi! I'm someone who enjoys traveling the most — it's my favorite way to explore and learn.  
+                I also love cooking, watching movies and series, and occasionally reading novels.  
+                I'm interested in web development and currently learning HTML, CSS, and Python.  
+                I enjoy building small projects and expressing my creativity through code.  
+                Thanks for visiting my portfolio!
+              </p>
+              
+        </div>
+    </section>
+    
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            
+<h3>Education</h3>
+<p> Bachelor of Computer Science Engineering </p>
+<p>Amrita Vishwa Vidyapeetam Expected Graduation Year:2028</p>
+<p>Narayana School (2024)
+<h3>Skills</h3>
+<ul>
+<li>Programming Languages: Python, Java</li>
+<li>Web Development: HTML, CSS</li>
+<li>Soft Skills: Problem-solving, Communication, Teamwork</li>
+</ul>
+<h3>Extracurricular Activities</h3>
+<ul>
+<li>Member of the College Cultural Committee</li>
+<li>Volunteer at a local NGO</li>
+</ul>
+<h3>Languages</h3>
+<ul>
+<li>English(Fluent)</li>
+<li>Hindi(Fluent)</li>
+<li>Telugu(Fluent)</li>
+</ul>
+        </div>
+    </section>
+    
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Movie Recommendations Page</h3>
+                    <p> A layout that showcases my favorite movies.</p> 
+                    <a href="movie.html" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Travel Blog</h3>
+                    <p>A travel inspired single page site sharing my dream trip</p>
+                    <a href="pondicherry.html" target="_blank">View Project </a>
+                </div>
+                <div class="project-card">
+                     <h3> Feedback Form </h3>
+                     <p>A feedback form that collects tourists experience in the resort</p>
+                     <a href="feedbck.html" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Varnika M. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
